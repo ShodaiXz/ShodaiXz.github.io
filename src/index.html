@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" href="image/proizzy.png" type="image/gif">
+  <title>Proizzy | Home</title>
+
+
+</head>
+<body>
+    <body class=" bg-slate-300">
+
+
+        <nav class="bg-white shadow-lg w-full fixed z-50">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img class="sm: w-[80px] xl:w-[150px]"
+                        src="https://arunika.co.id/wp-content/uploads/2023/12/proizzy.png" alt="Logo">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a href="contact.html" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact
+                        Me</a>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+                        <li>
+                            <a href="#" class="block py-2 px-3 rounded md:bg-transparent md:p-0 hover:text-blue-700"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 px-3 text-gray-900  rounded md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500  md:dark:hover:bg-transparent ">About</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('services') }}"
+                                class="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        {{-- slider --}}
+    
+    
+        <section
+            class=" bg-no-repeat bg-cover object-fill bg-[url('https://www.binasehat.com/wp-content/uploads/2023/04/homecare2.png')] bg-gray-300 bg-blend-multiply">
+            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                    Tetap Aman Meski Perawatan di Rumah</h1>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Quia voluptatem, asperiores ab laudantium natus consequuntur perferendis
+                    at odit hic numquam.</p>
+                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                    <a href="#"
+                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Mulai Dengan Kami
+                        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                    <a href="{{ url('about') }}"
+                        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                        Lebih Mengenal Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white">
+            <div class="w-full">
+                <div
+                    class="dark:bg-gray-800 bg-slate-300 border-gray-200 dark:border-gray-800  p-8 md:p-12 justify-center grid md:grid-cols-2 gap-8 ">
+                    <div class="text-center lg:mb-0 md:mb-5">
+                        <h1 class="font-extrabold text3xl text-yellow-500 text-6xl mb-5">21,60 Milyar</h1>
+                        <pc class="font-extrabold text3xl text-white">Santunan Tersalurkan Selama Tahun 2022</pc>
+                    </div>
+    
+                    <div class=" text-center">
+                        <h1 class="font-extrabold text3xl  text-yellow-500 text-6xl mb-5">3860</h1>
+                        <p class="font-extrabold text3xl text-white">Penerima Manfaat Selama Tahun 2022</p>
+                    </div>
+                </div>
+            </div>
+            
+            <section class=" bg-gray-800 pt-5 pb-9">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-5 ">
+                    <div
+                        class=" dark:bg-blue-700 bg-slate-300 border-blue-200 dark:border-blue-700 rounded-lg p-8 md:p-12 mb-8 shadow-lg">
+                        <a href="#"
+                            class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
+    
+                        </a>
+                        <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Tetap Aman Walau
+                            Perawatan di Rumah</h1>
+                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">Static websites are now used to
+                            bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
+                            both web designers and developers.</p>
+                        <a href="#"
+                            class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                            Read more
+                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-red-50 dark:bg-blue-700 border border-red-200 dark:border-blue-700 rounded-lg p-8 md:p-12 shadow-lg">
+                            <a href="#"
+                                class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
+    
+                            </a>
+                            <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Start with Proizzy System
+                            </h2>
+                            <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now
+                                used to bootstrap lots of websites and are becoming the basis for a variety of tools that
+                                even influence both web designers and developers.</p>
+                            <a href="#"
+                                class="text-white  hover:underline font-medium text-lg inline-flex items-center">Read more
+                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="bg-blue-50 dark:bg-blue-700 border border-blue-200 dark:border-blue-700 rounded-lg p-8 md:p-12 shadow-lg">
+                            <a href="#"
+                                class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
+    
+    
+                            </a>
+                            <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Best Proizzy libraries
+                                around the web</h2>
+                            <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now
+                                used to bootstrap lots of websites and are becoming the basis for a variety of tools that
+                                even influence both web designers and developers.</p>
+                            <a href="#"
+                                class="text-white hover:underline font-medium text-lg inline-flex items-center">Read more
+                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class=" text-wrap bg-slate-50 block">
+                <div class="w-full h-[500px] grid md:grid-cols-2">
+                    <div class="justify-center items-center flex ">
+                        <img class="xl:h-[450px] xl:w-[450px] md:h-[450px] md:w-[450px] md:rounded-2xl sm:w-full transition-all border-black hover:scale-110 my-5
+            "
+                            src="image/hphp.jpg" alt="">
+                    </div>
+                    <div class="justify-center items-center flex">
+                        <article class=" max-w-xl p-5 rounded-2xl h-[400px] md:my-2 md:text-wrap  text-wrap flex-grow">
+                            <h1 class=" text-5xl font-extrabold">"</h1>
+                            <p class="text text-2xl font-normal text-wrap">Manusia dalam kehidupannya tidak dapat terhindar
+                                dari musibah, namun sebagai makhluk sosial ketika terjadi musibah diwajibkan untuk tolong
+                                menolong dan membantu satu sama lain. Asuransi Syariah memiliki fungsi utama sebagai
+                                operator dalam berbagi risiko diantara para peserta atau pemegang polis apabila suatu
+                                musibah terjadi.</p>
+    
+                        </article>
+                    </div>
+                </div>
+            </section>
+           
+            
+
+
+    <footer class=" bg-gray-800 lg:0">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 bottom-0 min-w-full">
+            <div class="md:flex md:justify-between sm:flex sm:justify-between">
+              <div class="mb-6 md:mb-0">
+                  <a href="https://flowbite.com/" class="flex items-center">
+                      <img src="https://arunika.co.id/wp-content/uploads/2023/12/proizzy.png" class=" h-24 me-3" alt="" />
+    
+                  </a>
+              </div>
+              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div>
+                      
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                         
+                          <li class="mb-4">
+                              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                          </li>
+
+                          <li>
+                              <a href="https://www.facebook.com/proizzy.homecare.7/" class="hover:underline">Facebook</a>
+                          </li>
+                        
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Proizzy</a>. All Rights Reserved.
+              </span>
+              <div class="flex mt-4 sm:justify-center sm:mt-0">
+                  <a href="https://www.facebook.com/proizzy.homecare.7/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                        </svg>
+                      <span class="sr-only">Facebook page</span>
+                  </a>
+                  <a href="https://www.instagram.com/homecare_proizzy/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                      <span class="sr-only">instagram</span>
+                  </a>
+                  
+              </div>
+          </div>
+        </div>
+    </footer>
+    
+    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
